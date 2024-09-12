@@ -1,0 +1,13 @@
+# Ignore the vsCode folder
+.vscode/
+
+# Ignore all files starting with "test"
+test*
+*.xxx
+
+# Ignore all folders starting with "test" or ".test"
+test*/
+.test*/
+
+# Ignore all files starting with "credentials"
+credentials*
