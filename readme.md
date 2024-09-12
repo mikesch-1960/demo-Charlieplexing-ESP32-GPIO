@@ -16,7 +16,7 @@ For more details, see [Charlieplexing](https://en.wikipedia.org/wiki/Charlieplex
 
 You can test the sketch without using the Arduino IDE or physical hardware by using the Wokwi simulator. Use the simulator at this [link](https://wokwi.com/projects/new/esp32).
 
-1. Copy the sketch into the simulator's [sketch.ino](FastGPIOtest.ino) tab.
+1. Copy the sketch into the simulator's [sketch.ino](CharliplexingGPIOtest.ino) tab.
 2. Copy this [diagram.json](wokwi/WokWi_diagram.json) file into the simulator's `diagram.json` tab.
 
 Make sure you copy the entire JSON code, including the outer curly brackets, as they may not always be visible in a browser window.

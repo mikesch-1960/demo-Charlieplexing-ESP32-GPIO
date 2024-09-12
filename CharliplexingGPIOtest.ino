@@ -1,5 +1,3 @@
-#include "hal/gpio_ll.h"
-
 #define DEBUG_DELAY   1000      // in ms
 #define MESSURELOOPS  50000     // How many times to measure the speed of the functions. NOTE: for wokwi simulation set it to 0!
 
@@ -110,13 +108,12 @@ void setup() {
   AllOff_M0();
 
   Serial.println("--------------------------------------------------------------");
-  Serial.print("Circle through all Leds using slowest method... ");
+  Serial.println("Circle through all Leds using slowest method... ");
 
+  // In debugmode the LitLed functions are printing out the names of the leds
   for (int i = 0; i < NUM_LEDS; i++) {
     LitLed_M0(i, true);
   }
-
-  Serial.println(" Done!");
 
   if (MESSURELOOPS > 0) {
     Serial.println("--------------------------------------------------------------");
