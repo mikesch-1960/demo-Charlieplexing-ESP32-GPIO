@@ -14,24 +14,16 @@ For more details, see [Charlieplexing](https://en.wikipedia.org/wiki/Charlieplex
 
 ## Testing Without Hardware and Arduino IDE
 
-You can test the sketch without using the Arduino IDE or physical hardware by using the Wokwi simulator. Use the simulator at this [link](https://wokwi.com/projects/new/esp32).
-
-1. Copy the sketch into the simulator's [sketch.ino](CharliplexingGPIOtest.ino) tab.
-2. Copy this [diagram.json](wokwi/WokWi_diagram.json) file into the simulator's `diagram.json` tab.
-
-Make sure you copy the entire JSON code, including the outer curly brackets, as they may not always be visible in a browser window.
-
+You can test the sketch without using the Arduino IDE or physical hardware by using the Wokwi simulator. Use the Project at this [link](https://wokwi.com/projects/411567201737096193).
 The `diagram.json` defines the hardware, including the ESP32, a breadboard, six LEDs, and three resistors.
 
-**Important:** After copying the sketch into the simulator, change the line `#define MESSURELOOPS` to 0. This skips the measurement steps in the `setup()` function; otherwise, the sketch will take a long time measuring the speed of the functions.
-
-Once this is done, press the play button, and the sketch will run in the simulator. Keep in mind that the simulator runs slower than real hardware.
+Then, press the play button, and the sketch will run in the simulator. Keep in mind that the simulator runs slower than real hardware, so time messurement is not posible.
 
 ## Prerequisites
 
-- ESP32 (any version should work)
+- ESP (any version should work)
 - Arduino IDE (tested with version 2.3.2)
-- 6 LEDs and 3 resistors (I used 10 Ohm resistors)
+- 6 LEDs and 3 resistors (I used 10Ω resistors, but zp to 330Ω should work)
 - Breadboard (optional)
 - Jumper wires (optional)
 
